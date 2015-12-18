@@ -1,6 +1,9 @@
 package uk.co.sammy.classes;
 
+import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,6 +12,7 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 import static uk.co.sammy.classes.LessThanOrEqual.lessThanOrEqual;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CheckingAssertThatTest {
 	private String name;
 	private int age;
@@ -81,7 +85,13 @@ public class CheckingAssertThatTest {
 		String authorName = "Sujoy";
 		assertThat(authorName, lessThanOrEqual("Zachary"));
 		
-		int maxInt = Integer.MAX_VALUE;
-		assertThat(maxInt, lessThanOrEqual(Integer.MIN_VALUE));
+		int maxInt = Integer.MIN_VALUE;
+		assertThat(maxInt, lessThanOrEqual(Integer.MAX_VALUE));
+	}
+
+	@Test(timeout = 10)
+	@Ignore("Times out the whole test")
+	public void forEver() throws Exception{
+		Thread.sleep(100000);
 	}
 }
