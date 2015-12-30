@@ -1,17 +1,10 @@
 package uk.co.sammy.classes;
 
-<<<<<<< HEAD
+
 import org.junit.*;
-=======
->>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
-import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
 
 import static org.junit.Assert.*;
-<<<<<<< HEAD
-=======
-import org.junit.*;
->>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CheckingAssertsTest {

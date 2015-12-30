@@ -16,9 +16,4 @@ public class CheckingAsserts {
 	public String getAddress() {
 		return address;
 	}
-
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9

@@ -1,23 +1,15 @@
 package uk.co.sammy.classes;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
 import org.junit.experimental.theories.ParameterSignature;
 import org.junit.experimental.theories.ParameterSupplier;
 import org.junit.experimental.theories.PotentialAssignment;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-<<<<<<< HEAD
-
-=======
 /**
  * Created by smlif on 21/12/2015.
  */
->>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
+
 public class StringSupplier extends ParameterSupplier {
 
     @Override
@@ -27,8 +19,5 @@ public class StringSupplier extends ParameterSupplier {
         list.add(PotentialAssignment.forValue("second", "Marie"));
         return list;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
+
