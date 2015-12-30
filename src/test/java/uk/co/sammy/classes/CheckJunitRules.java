@@ -1,12 +1,18 @@
 package uk.co.sammy.classes;
 
+
 import org.junit.*;
 import org.junit.rules.*;
 import java.io.File;
 import java.io.IOException;
 
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.*;
+
+/**
+ * Created by smlif on 21/12/2015.
+ */
 
 public class CheckJunitRules {
 
@@ -64,4 +70,7 @@ public class CheckJunitRules {
         thrown.expectMessage("Is this a legal state?");
         throw new IllegalStateException();
     }
+
 }
+
+

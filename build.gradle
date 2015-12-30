@@ -12,4 +12,5 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
     compile 'info.cukes:cucumber-core:1.2.4'
+    compile 'org.mockito:mockito-all:1.9.5'
 }

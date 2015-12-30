@@ -10,7 +10,11 @@ import java.util.List;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
+<<<<<<< HEAD
 import static uk.co.sammy.classes.LessThanOrEqual.*;
+=======
+import static uk.co.sammy.classes.LessThanOrEqual.lessThanOrEqual;
+>>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CheckingAssertThatTest {
@@ -42,35 +46,60 @@ public class CheckingAssertThatTest {
 		assertThat(age, not(equalTo(33)));
 		assertThat(age, is(not(33)));
 	}
+<<<<<<< HEAD
 
 	@Test
 	public void verifyMultipleValues(){
 		double marks = 100.00;
 
+=======
+	
+	@Test
+	public void verifyMultipleValues(){
+		double marks = 100.00;
+		
+>>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
 		assertThat(marks, either(is(100.00)).or(is(90.9)));
 		assertThat(marks, both(not(99.99)).and(not(60.00)));
 		assertThat(marks, anyOf(is(100.00), is(1.00), is(55.00), is(88.00), is(67.8)));
 		assertThat(marks, not(anyOf(is(0.00), is(200.00))));
 		assertThat(marks, not(allOf(is(1.00), is(100.00), is(30.00))));
 	}
+<<<<<<< HEAD
 
 	@Test
 	public void verifyCollectionItems(){
 		List<Double> salary = Arrays.asList(50.00, 200.00, 500.00);
 
+=======
+	
+	@Test
+	public void verifyCollectionItems(){
+		List<Double> salary = Arrays.asList(50.00, 200.00, 500.00);
+		
+>>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
 		assertThat(salary, hasItem(50.00));
 		assertThat(salary, hasItems(200.00, 500.00));
 		assertThat(salary, not(hasItem(1.00)));
 	}
+<<<<<<< HEAD
 
 	@Test
 	public void verifyStringValues(){
 		String name = "John Jr Dale";
 
+=======
+	
+	@Test
+	public void verifyStringValues(){
+		String name = "John Jr Dale";
+		
+>>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
 		assertThat(name, startsWith("John"));
 		assertThat(name, endsWith("Dale"));
 		assertThat(name, containsString("Jr"));
 	}
+<<<<<<< HEAD
 
 	@Test
 	public void checkCustomMatcher() throws Exception{
@@ -85,6 +114,22 @@ public class CheckingAssertThatTest {
 		String authorName = "Sujoy";
 		assertThat(authorName, lessThanOrEqual("Zachary"));
 
+=======
+	
+	@Test
+	public void checkCustomMatcher() throws Exception{
+		int actualGoalScored = 2;
+		
+		assertThat(actualGoalScored, lessThanOrEqual(4));
+		assertThat(actualGoalScored, lessThanOrEqual(2));
+		
+		double originalPI = 3.14;
+		assertThat(originalPI, lessThanOrEqual(9.00));
+		
+		String authorName = "Sujoy";
+		assertThat(authorName, lessThanOrEqual("Zachary"));
+		
+>>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
 		int maxInt = Integer.MIN_VALUE;
 		assertThat(maxInt, lessThanOrEqual(Integer.MAX_VALUE));
 	}
@@ -94,4 +139,8 @@ public class CheckingAssertThatTest {
 	public void forEver() throws Exception{
 		Thread.sleep(100000);
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9

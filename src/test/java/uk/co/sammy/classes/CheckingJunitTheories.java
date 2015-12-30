@@ -6,6 +6,12 @@ import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
+<<<<<<< HEAD
+=======
+/**
+ * Created by smlif on 21/12/2015.
+ */
+>>>>>>> b2cb363d7067e6e92d8ab6222f218929c78852f9
 @RunWith(Theories.class)
 public class CheckingJunitTheories {
 
