@@ -1,6 +1,7 @@
 
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'idea'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -30,6 +31,6 @@ task secondTask(){
 
 secondTask.dependsOn 'firstTask'
 
-task wrapper(type: Wrapper){
+task wrapper(type : Wrapper){
     gradleVersion = '2.9'
 }
