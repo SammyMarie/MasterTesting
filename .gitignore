@@ -2,3 +2,5 @@
 .idea
 MasteringTests.iml
 build
+bin
+.settings

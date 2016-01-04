@@ -1,9 +1,6 @@
 package uk.co.sammy.classes;
 
-import org.hamcrest.BaseMatcher;
-import org.hamcrest.Description;
-import org.hamcrest.Factory;
-import org.hamcrest.Matcher;
+import org.hamcrest.*;
 
 /**
  * Created by smlif on 30/12/2015.
