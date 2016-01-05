@@ -4,3 +4,6 @@ MasteringTests.iml
 build
 .settings
 bin
+MasteringTests.ipr
+MasteringTests.iws
+out
